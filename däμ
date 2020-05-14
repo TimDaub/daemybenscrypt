@@ -2,6 +2,7 @@
 import json
 import argparse
 from pathlib import Path
+from däμbenscrypt import run
 
 lang_name = "däμbenscrypt"
 
@@ -25,6 +26,7 @@ def run_compile():
   parser = argparse.ArgumentParser(description='Ingest files to compile')
   parser.add_argument("file", type=Path, help="A file to compile")
   args = parser.parse_args()
+  run(args.file)
 
 def boot():
   with open(config_name) as f:

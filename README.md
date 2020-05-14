@@ -44,6 +44,7 @@ $ däμ specs/init.däμ
   - [WebAssembly Specification](https://webassembly.github.io/spec/core/index.html)
 - Tools:
   - [wabt](https://github.com/webassembly/wabt)
+  - [wasmer](https://github.com/wasmerio/python-ext-wasm)
 - Compilers:
   - [Building your own WASM compiler](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
     - [ColinEberhardt/chasm](https://github.com/ColinEberhardt/chasm)
