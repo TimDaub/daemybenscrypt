@@ -26,13 +26,16 @@ def run_compile():
   parser.add_argument("file", type=Path, help="A file to compile")
   args = parser.parse_args()
 
-with open(config_name) as f:
-  config = json.load(f)
+def boot():
+  with open(config_name) as f:
+    config = json.load(f)
+  
+  if config["wabt_path"]:
+    run_compile()
+  else:
+    generate_config()
 
-if config["wabt_path"]:
-  run_compile()
-else:
-  generate_config()
+boot()
 
 
 
