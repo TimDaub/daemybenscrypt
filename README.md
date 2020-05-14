@@ -25,8 +25,15 @@ installed.
 ```bash
 $ git clone git@github.com:TimDaub/<whatever this language is called by then>.git
 $ cd <you'll figure it out>
-$ chmod +x ./build
-$ ./build
+$ chmod +x däμ
+```
+
+## Usage
+
+Once you've completed the installation, you can use the compiler:
+
+```bash
+$ däμ specs/init.däμ
 ```
 
 ## References
@@ -34,5 +41,9 @@ $ ./build
 - Docs:
   - [WebAssembly docs](https://developer.mozilla.org/en-US/docs/WebAssembly)
   - [YAML Spec](https://yaml.org/spec/)
+  - [WebAssembly Specification](https://webassembly.github.io/spec/core/index.html)
 - Tools:
   - [wabt](https://github.com/webassembly/wabt)
+- Compilers:
+  - [Building your own WASM compiler](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
+    - [ColinEberhardt/chasm](https://github.com/ColinEberhardt/chasm)

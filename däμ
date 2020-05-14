@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import json
+import argparse
+from pathlib import Path
+
+lang_name = "däμbenscrypt"
+
+config = {}
+config_name = ".{}.json".format(lang_name)
+
+def generate_config():
+  print("No config found. Running setup...")
+
+  wabt = Path(input("wabt path (default: none): "))
+  if wabt.exists():
+    config["wabt_path"] = str(wabt)
+  else:
+    raise ValueError("wabt directory doesn't exist")
+
+  with open(config_name, 'w') as out:
+    json.dump(config, out)
+    print("Installation was successful")
+
+def run_compile():
+  parser = argparse.ArgumentParser(description='Ingest files to compile')
+  parser.add_argument("file", type=Path, help="A file to compile")
+  args = parser.parse_args()
+
+with open(config_name) as f:
+  config = json.load(f)
+
+if config["wabt_path"]:
+  run_compile()
+else:
+  generate_config()
+
+
+
