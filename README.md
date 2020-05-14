@@ -16,8 +16,7 @@ brrr....
 
 Prerequisite is that you have:
 
-- [WebAssembly/wabt](https://github.com/webassembly/wabt); and
-- Python
+- Python3
 
 installed.
 
