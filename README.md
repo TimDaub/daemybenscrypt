@@ -8,7 +8,7 @@ Everyone is writing their own web languages, so why shouldn't I?
 
 brrr....
 
-### Philosophy
+### Design principles
 
 [>click <<here>><](https://www.destroyallsoftware.com/talks/wat)
 
