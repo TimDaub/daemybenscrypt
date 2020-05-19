@@ -8,7 +8,7 @@ Everyone is writing their own web languages, so why shouldn't I?
 
 brrr....
 
-### Philosophy
+### Design principles
 
 [>click <<here>><](https://www.destroyallsoftware.com/talks/wat)
 
@@ -16,8 +16,7 @@ brrr....
 
 Prerequisite is that you have:
 
-- [WebAssembly/wabt](https://github.com/webassembly/wabt); and
-- Python
+- Python3
 
 installed.
 
