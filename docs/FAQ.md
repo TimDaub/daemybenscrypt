@@ -8,5 +8,8 @@ production-ready. To those I say, is a pupating butterfly production-ready?  Is
 it alive or dead? That's däμbenscrypt. It's a pupating Schrödinger's butterfly.
 You're welcome.
 
+## I'm a representative with the Oracle Java VM foundation and would like to make an acquisition offer. How can I contact you?
+
+Yes.
 
 
