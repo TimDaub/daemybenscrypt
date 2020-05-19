@@ -47,3 +47,7 @@ $ däμ specs/init.däμ
 - Compilers:
   - [Building your own WASM compiler](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
     - [ColinEberhardt/chasm](https://github.com/ColinEberhardt/chasm)
+
+## License
+
+[tuwat you want, but think about the omen](https://www.youtube.com/watch?v=b-_wE0mJU5Y)
