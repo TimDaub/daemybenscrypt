@@ -35,6 +35,14 @@ Once you've completed the installation, you can use the compiler:
 $ däμ specs/init.däμ
 ```
 
+## Tests
+
+To run the tests:
+
+```bash
+$ python -m pytest -v -s ./tests
+```
+
 ## References
 
 - Docs:
@@ -47,6 +55,12 @@ $ däμ specs/init.däμ
 - Compilers:
   - [Building your own WASM compiler](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
     - [ColinEberhardt/chasm](https://github.com/ColinEberhardt/chasm)
+- RegExp:
+  - [regular expressions 101](https://regex101.com/)
+  - [Python3 docs: Regular expressions operations](https://docs.python.org/3/library/re.html)
+  - [Python3 docs: Regular expressions HOWTO](https://docs.python.org/3/howto/regex.html)
+- Syntax:
+  - [Syntax in Functions](http://learnyouahaskell.com/syntax-in-functions)
 
 ## License
 

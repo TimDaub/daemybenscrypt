@@ -1,1 +1,1 @@
-from .compiler import run, emitter
+from .compiler import to_wasm, emitter, tokenizer
