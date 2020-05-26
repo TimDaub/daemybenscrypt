@@ -12,4 +12,6 @@ You're welcome.
 
 Yes.
 
+## Is däμbenscrypt turing-complete?
 
+At this moment, we **don't** recommend taking däμbenscrypt on any kind of tours (bicycle-tours, car-tours, parcours, etc.).
