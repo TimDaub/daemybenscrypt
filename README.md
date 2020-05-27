@@ -10,7 +10,8 @@ brrr....
 
 ### Design principles
 
-[>click <<here>><](https://www.destroyallsoftware.com/talks/wat)
+- [>click <<here>><](https://www.destroyallsoftware.com/talks/wat)
+- https://github.com/TimDaub/d-benscrypt-thanks-github/issues/2
 
 ## Installation
 
