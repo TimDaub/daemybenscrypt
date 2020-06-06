@@ -36,11 +36,10 @@ def tinder(source, matcher):
   (pattern, token_type) = matcher
   res = re.compile(pattern, re.MULTILINE)
   return [
-    {"type": token_type, "value": match.group(0)}
+      {"type": token_type, "value": match.group(0), "span": match.span()}
     for match in re.finditer(res, source)
   ]
 
-  
 def emitter():
   # TODO: https://webassembly.github.io/spec/core/text/lexical.html#comments
   scrypt = setup()
