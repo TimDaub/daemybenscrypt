@@ -1,3 +1,6 @@
+import math
+import sys
+
 class Tree:
   def insert(self, root, key, value):
     left = root.left
@@ -7,17 +10,16 @@ class Tree:
     r_dist = self.distance(key, right.key)
 
   def distance(self, k1, k2):
-    # NOTE: Inspired by:
-    # https://en.wikipedia.org/wiki/Hamming_distance#Algorithm_example
-    shortest = min(k1, k2, key=len)
-    longest = max(k1, k2, key=len)
-    
-    dist_counter = len(longest) - len(shortest)
-    for n in range(len(shortest)):
-      if shortest[n] != longest[n]:
-        dist_counter += 1
-    return dist_counter
-    
+    b_dist = bytes(x ^ y for x, y in zip(bytes(k1, "utf-8"), bytes(k2, "utf-8")))
+    return math.log2(int.from_bytes(b_dist, sys.byteorder))
+
+  def iou_distance(self, k1, k2):
+    k1 = set(k1)
+    k2 = set(k2)
+    intersection = len(k1.intersection(k2))
+    union = len(k1.union(k2))
+    return intersection / union
+
 class Node:
   def __init__(self, root, key, value, left=None, right=None):
     self.root = root
