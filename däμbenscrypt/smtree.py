@@ -10,15 +10,12 @@ class Tree:
     r_dist = self.distance(key, right.key)
 
   def distance(self, k1, k2):
-    b_dist = bytes(x ^ y for x, y in zip(bytes(k1, "utf-8"), bytes(k2, "utf-8")))
-    return math.log2(int.from_bytes(b_dist, sys.byteorder))
-
-  def iou_distance(self, k1, k2):
-    k1 = set(k1)
-    k2 = set(k2)
-    intersection = len(k1.intersection(k2))
-    union = len(k1.union(k2))
-    return intersection / union
+    comparison = bytes(x ^ y for x, y in zip(bytes(k1, "utf-8"), bytes(k2, "utf-8")))
+    reduced_comparison = int.from_bytes(comparison, sys.byteorder)
+    if reduced_comparison == 0:
+      return 0
+    else:
+      return math.log2(reduced_comparison)
 
 class Node:
   def __init__(self, root, key, value, left=None, right=None):
